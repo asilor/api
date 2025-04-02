@@ -1,0 +1,39 @@
+### Get all products
+GET http://localhost:8000/api/v1/products
+Accept: application/json
+
+### Get single product
+GET http://localhost:8000/api/v1/products/67ed22d75b91eff414200e34
+Accept: application/json
+
+### Create new product
+POST http://localhost:8000/api/v1/products
+Content-Type: application/json
+
+{
+  "name": "Smartphone XYZ",
+  "description": "Latest model with advanced features",
+  "price": 899.99
+}
+
+### Update product
+PUT http://localhost:8000/api/v1/products/67ed22d75b91eff414200e34
+Content-Type: application/json
+
+{
+  "name": "Smartphone XYZ Pro",
+  "description": "Latest model with advanced features and improved battery life",
+  "price": 999.99
+}
+
+### Delete a product
+DELETE http://localhost:8000/api/v1/products/67ed3509c9c025410dd742f5
+Accept: application/json
+
+### Test with invalid ID format
+GET http://localhost:8000/api/v1/products/invalid-id
+Accept: application/json
+
+### Test with non-existent ID (valid format but not in DB)
+GET http://localhost:8000/api/v1/products/507f1f77bcf86cd799439011
+Accept: application/json
