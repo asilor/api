@@ -7,8 +7,8 @@ import (
 
 	"github.com/joho/godotenv"
 
-    "std-mongo/database"
-	"std-mongo/handlers"
+    "github.com/asilor/api/database"
+	"github.com/asilor/api/handlers"
 )
 
 func main() {

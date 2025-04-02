@@ -8,8 +8,8 @@ import (
 
     "go.mongodb.org/mongo-driver/v2/bson"
 
-    "std-mongo/database"
-    "std-mongo/models"
+    "github.com/asilor/api/database"
+    "github.com/asilor/api/models"
 )
 
 func ProductRoutes(mux *http.ServeMux) {

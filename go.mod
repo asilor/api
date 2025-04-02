@@ -1,4 +1,4 @@
-module std-mongo
+module github.com/asilor/api
 
 go 1.23.4
 
